@@ -1,0 +1,13 @@
+# gazelle:ignore
+
+package(default_visibility = ["//visibility:public"])
+
+alias(
+    name = "common_definitions",
+    actual = "//proto:common_definitions_go",
+)
+
+alias(
+    name = "go_default_library",
+    actual = "//proto:common_definitions_go",
+)

@@ -1,0 +1,13 @@
+# gazelle:ignore
+
+package(default_visibility = ["//visibility:public"])
+
+alias(
+    name = "tpm_attestz",
+    actual = "//proto:tpm_attestz_go",
+)
+
+alias(
+    name = "go_default_library",
+    actual = "//proto:tpm_attestz_go",
+)

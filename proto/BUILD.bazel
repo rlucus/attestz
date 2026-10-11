@@ -18,6 +18,12 @@ go_proto_library(
     proto = ":common_definitions_proto",
 )
 
+go_library(
+    name = "common_definitions_go",
+    embed = [":common_definitions_go_proto"],
+    importpath = "github.com/openconfig/attestz/proto/common_definitions",
+)
+
 proto_library(
     name = "tpm_enrollz_proto",
     srcs = [
